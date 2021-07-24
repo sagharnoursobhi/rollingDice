@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>rolling-dice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       
+        <div class="row">
+            <div class="player player--0 player--active col-6">
+                <h1 id="name--0">Player 1</h1>
+                <h3 class="score" id="score--0">0</h3>
+                <p>
+                    <lable class="current-label">current</lable>
+                    <br>
+                    <span class="current-score" id="current--0">0</span>
+                </p>
+            </div>
+            <div class="player player--1 col-6 background">
+                <h1 id="name--1">Player 2</h1>
+                <h3 class="score" id="score--1">0</h3>
+                <p>
+                    <lable class="current-label">current</lable>
+                    <br>
+                    <span class="current-score" id="current--1">0</span>
+                </p>
+            </div>
+        </div>
+        <div class="parent-btns">
+            <button class="btn btn--new" type="button">🔄 New Game</button>
+            <img src="images/dice-1.png" class="dice" alt="img-dice">
+            <section class="section-btn">
+                <button class="btn btn--roll" type="button">🎲 Roll Dice</button>
+                <button class="btn btn--hold" type="button">⏯ Hold</button>
+            </section>
+        </div>
+        <div class="modal modal-hidden">
+            <h1 class="modal-title">congradulations! <span>🥳</span></h1>
+            <p class="modal-winner"></p>
+            <p class="modal-text">won the game</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
