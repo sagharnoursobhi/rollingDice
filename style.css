@@ -3,33 +3,32 @@
         padding: 0;
         box-sizing: border-box;
     }
-    body{
-       width: 100%;
-       height: 100%;
-    }
-
-    .row{
+    .flex-container{
         display: flex;
-        width: 80%;
+        max-width: 960px;
         margin-left: auto;
         margin-right: auto;
         height: 50vh;
         background-color: rgb(182, 128, 137);
         position: relative;
-        height: 80vh;
+        height: 700px;
         margin-top: 50px;
         overflow: hidden;
         border-radius: 50px;
         
     }
+    .flex-element{
+        flex: 1;
+        padding: 20px;
+    }
 
-    [class*="col-"]{
+    /* [class*="col-"]{
         padding: 20px;
     }
 
     .col-6{
         width: 60%;
-    }
+    } */
 
     p{
         color: white;

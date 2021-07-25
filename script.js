@@ -89,4 +89,3 @@
         })
 
         btn_new.addEventListener('click' , resettingTheGame);
-    
