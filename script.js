@@ -29,6 +29,11 @@
         document.querySelector('.modal-winner').textContent = 'player' +'\n'+ activePlayer;
         activePlayer--;
     }
+    //close-modal-btn
+    document.querySelector('.close-modal').addEventListener('click' , ()=>{
+        document.querySelector('.modal').classList.remove('modal-show');
+        document.querySelector('.modal').classList.add('modal-hidden');
+    })
 
     const resettingTheGame = ()=>{
         currentScore = 0;
